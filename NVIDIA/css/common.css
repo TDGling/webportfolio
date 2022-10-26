@@ -4,14 +4,6 @@
 .top {
     min-height: 206px;
 }
-/* 1-1.상단메뉴 */
-.tmenu {
-    /* 플렉스박스 */
-    display: flex;
-    max-width: 970px;
-    height: 44px;
-    margin: 0 auto;
-}
 /* 플렉스 박스 직계div 공통 */
 .tmenu > div {
     flex: 1;
@@ -38,36 +30,9 @@
 .sns a:hover {
     opacity: 0.8;
 }
-/* 트위터 아이콘 조정 */
-.sns a.fi-twitter {
-    font-size: 13px;
-}
-/* 유튜브 아이콘 조정 */
-.sns a.fi-youtube-play {
-    font-size: 11px;
-}
-/* 카카오 스토리 배경이미지 넣기 */
-.sns a:last-child {
-    background: url(../images/sns_kakao.png) no-repeat center/auto 100%;
-}
 
-/* 1-1-2.사이드메뉴 */
-.smbx {
-    /* 플렉스박스 */
-    display: flex;
-    /* 수평방향 정렬 */
-    justify-content: flex-end;
-    /* 글자체 : Roboto, 나눔바른고딕 */
-    font-family: "Roboto", nbg;
-    font-size: 12px;
-}
-/* 사이드 메뉴 상위 a요소 */
-.smbx > li > a {
-    display: block;
-    padding: 0 13px;
-    line-height: 44px;
-    color: #747474;
-}
+
+
 /* 사이드 메뉴 상위 첫번째 사이구분선 요소 */
 .smbx > li:first-child {
     border-right: 1px solid #e5e5e5;
@@ -138,7 +103,7 @@
     /* 플렉스박스 */
     display: flex;
     /* 수평방향중앙정렬 */
-    justify-content: center;
+    /* justify-content: cente */
     /* 플렉스 랩핑박스 */
     flex-wrap: wrap;
 }
@@ -161,7 +126,7 @@
 }
 /* 오버시 a요소 */
 .gnb a:hover {
-    color: red;
+    /* color: red; */
 }
 
 /* 2. 하단영역 */
