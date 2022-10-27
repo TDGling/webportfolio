@@ -4,24 +4,15 @@
     z-index: 999;
     /* 포지션이 있어야 z-index적용됨!
       GNB 하위메뉴가 위에 오도록 z-index를 높인다! */
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
   }
-
   /* ul 초기화 */
   .gnb ul {
     display: flex;
     width: 800px;
-    margin: 0 auto;
+    margin: 0 150px;
     /* outline: 1px solid red; */
   }
-
-  /* 가상요소로 clear설정하기 */
-  /* .gnb ul::after {
-      content: '';
-      display: block;
-      clear: both;
-    } */
-
   /* 상위li 리스트요소 */
   .gnb>ul>li {
     width: 200px;
@@ -32,8 +23,7 @@
     /* box-sizing: border-box; */
   }
 
-  /* 상위 li에 마우스 오버시 나타날 서브메뉴 배경
-    가상요소로 만들기!!! 서브메뉴있는 li만(li.sm) */
+  /* 상위 li에 마우스 오버시 나타날 서브메뉴 배경 가상요소로 만들기!!! 서브메뉴있는 li만(li.sm) */
   .gnb>ul>li.sm::after {
     content: "";
     display: block;
@@ -43,14 +33,12 @@
     /* left,top의 부모는? .gnb */
     height: 0;
     /* 65px -> 오버시 */
-    background-color: darkblue;
-
+    background-color: white;
     /* 트랜지션 */
     transition: 0.4s;
   }
 
-  /* 상위 li에 마우스 오버시 
-    서브메뉴 배경 가상요소 보이기 */
+  /* 상위 li에 마우스 오버시 서브메뉴 배경 가상요소 보이기 */
   .gnb>ul>li:hover::after {
     height: 200px;
   }
@@ -60,15 +48,25 @@
     content: "";
     display: block;
     position: absolute;
-    /* 젠틀앱솔루트:
-      부모박스안에 그대로있음! */
+    /* 젠틀앱솔루트: 부모박스안에 그대로있음! */
     width: 1px;
     height: 20px;
     margin-top: 10px;
     margin-left: 1px;
-    background-color: blue;
+    background-color: black;
 
     /* border-left: 1px solid #000; */
+  }
+  .gnb>ul>li+li:nth-child(2)::before {
+    content: "";
+    display: block;
+    position: absolute;
+    /* 젠틀앱솔루트: 부모박스안에 그대로있음! */
+    width: 1px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 1px;
+    background-color: white;
   }
 
   /* li 상위메뉴 a요소 */
@@ -78,7 +76,7 @@
     width: 100%;
     height: 100%;
 
-    font-size: 17px;
+    font-size: 16px;
     line-height: 40px;
     color: #000;
     text-decoration: none;
@@ -88,8 +86,8 @@
 
   /* 부모li에 마우스 오버시 상위메뉴 a요소 변경 */
   .gnb>ul>li:hover>a {
-    color: lightskyblue;
-    background-color: darkblue;
+    color: green;
+    background-color: white;
   }
 
   /* 상단 메뉴 글자에 밑줄애니 */
@@ -109,7 +107,7 @@
     width: 0;
     /* 마우스오버시 100% */
     height: 2px;
-    background-color: #fff;
+    background-color: green;
     /* 트랜지션: 속시이지 - 돌아올때 지연시간 없음! */
     transition: width 0.2s ease-out;
   }
@@ -134,16 +132,14 @@
     /* 가로중앙이동 */
     z-index: 1;
     /* li가상요소 앱솔루트 보다 위! */
-
     /* 크기유지박스 왼쪽 패딩적용 */
-    width: 800px;
+    /* width: 800px; */
+    width: 1000px;
     box-sizing: border-box;
-    padding-left: 80px;
+    padding-left: 25px;
     /* outline: 1px dotted lime; */
-
     /* 플렉스박스 */
     display: flex;
-
     /* width: 200px; 
       -> 가로크기없이 auto 여야 옆으로 늘어남! */
     /* 서브메뉴 박스 숨기기 */
@@ -155,11 +151,11 @@
       숨기는 박스는 위아래 패딩,보더는
       숨겨지지 않으므로 쓰지 않는다!
       디자인은 하위요소에서 할것! */
-
-    background-color: darkblue;
+    background-color: white;
     border-radius: 0 0 5px 5px;
-    color: lightskyblue;
+    color: green;
     text-align: center;
+    /* margin-left: 10px; */
 
     /* 트랜지션 */
     transition: 0.4s;
@@ -188,22 +184,19 @@
     display: block;
     width: 100%;
     height: 100%;
-
     font-size: 14px;
-    color: lightskyblue;
+    color: black;
     text-decoration: none;
     line-height: 35px;
-
     padding: 0 5px;
-
     /* 트랜지션 */
     transition: 0.2s;
   }
 
   /* 서브메뉴 dd하위 a에 오버시 */
   .smenu dd a:hover {
-    background-color: lightskyblue;
-    color: darkblue;
+    /* background-color: lightskyblue; */
+    /* color: darkblue; */
   }
 
   /* 서브메뉴 하위 디자인 */
@@ -221,7 +214,7 @@
     font-weight: bold;
   }
   .smenu dd{
-    margin: 0;
+    margin: 0 auto;
   }
   .smenu dt a{
     font-size: 13px;
@@ -235,7 +228,49 @@
     /* 하위 박스가 포지션이 있으면 나중에 그린박스가
       윗박스보다 위에 올라온다! 따라서 메뉴박스가 위에 오도록
       z-index를 상위박스에서 높여줘야 하위메뉴가 밑에 깔리지 않는다! */
-    background-color: #fdfccf;
     text-align: center;
     line-height: 50;
   }
+
+  /* 2. 하단영역 */
+.info {
+  min-height: 150px;
+  background-color: #000;
+  padding: 70px;
+  /* 크기유지박스 bxb - 보더, 패딩포함 */
+  box-sizing: border-box;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/* 3-1 하단로고 */
+.blogo{
+  text-align: center;
+}
+
+/* 3-2 회사주소*/
+.addr{
+  color: #747474;
+  text-align: center;
+  font-size: 11px;
+  /* address 기본 이탈릭 해제 */
+  font-style: normal;
+  margin: 20px 0 10px;
+}
+
+/* 3-3. 하단링크 */
+.blink{
+  /* 플렉스박스 */
+  display: flex;
+  /* 수평방향정렬 중앙 */
+  justify-content: center;
+  /* 플렉스 랩핑박스 */
+  flex-wrap: wrap;
+}
+.blink a{
+  color: #747474;
+  font-size: 13px;
+  margin: 0 6px;
+}
+/* 마지막 링크 글자 두껍게 */
+.blink li :last-child a{
+  font-weight: bold;
+}

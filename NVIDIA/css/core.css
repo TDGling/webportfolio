@@ -5,22 +5,15 @@
 /*********** 1. 웹폰트 ***********/
 /* Roboto체 + Roboto Condensed체 - CDN */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap");
+/* noto sans kr */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
 
 /* 
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
-*/
-/* 나눔바른고딕 */
-@font-face {
-    font-family: nbg;
-    src: url(../fonts/NanumBarunGothicLightSubset.woff) format("woff");
-}
 
-/* Pistilli체 */
-@font-face {
-    font-family: pist;
-    src: url(../fonts/Pistilli-Roman.woff) format("woff");
-}
+font-family: 'Noto Sans KR', sans-serif;
+*/
 
 /* 
   [ 공통 클래스 이름정의 ]
