@@ -188,7 +188,7 @@
     color: black;
     text-decoration: none;
     line-height: 35px;
-    padding: 0 5px;
+    padding: 0 5px; /* 수정 */
     /* 트랜지션 */
     transition: 0.2s;
   }
@@ -202,7 +202,7 @@
   /* 서브메뉴 하위 디자인 */
   .smenu dl{
     width: 120px;
-    margin-left: -10px;
+    margin-left: -10px; /* /////// 수 정 */
     /* margin-left: -100px; */
   }
   .smenu dt{
