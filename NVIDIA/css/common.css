@@ -209,18 +209,22 @@
   /* 서브메뉴 하위 디자인 */
   .smenu dl{
     width: 120px;
-    margin-left: 30px;
+    margin-left: -10px;
+    /* margin-left: -100px; */
   }
   .smenu dt{
     border-bottom: 1px solid lightskyblue;
     margin-bottom: 5px;
   }
   .smenu dt a{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
   }
   .smenu dd{
     margin: 0;
+  }
+  .smenu dt a{
+    font-size: 13px;
   }
 
 
