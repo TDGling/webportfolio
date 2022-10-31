@@ -27,9 +27,9 @@ font-family: 'Noto Sans KR', sans-serif;
 */
 
 /* 공사중 표시 */
-body * {
+/* body * {
     outline: 1px dashed gray;
-}
+} */
 
 /************* 2. 공통 class *************/
 

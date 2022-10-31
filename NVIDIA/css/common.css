@@ -1,3 +1,48 @@
+#top {
+  position: relative;
+  /* z-index를 위해 렐러티브줌! */
+  z-index: 9999;
+  /* 박스하단 경계선 그림자 : x y blur 색 */
+  box-shadow: 0 1px 1px rgb(0, 0, 0);
+}
+
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 5px;
+}
+
+/* 2. 상단영역 속박스(.top) 최소높이 해제 */
+.top {
+  min-height: auto;
+}
+
+/* 3. 탑메뉴 없애기 */
+.tmenu {
+  display: none;
+}
+
+/* 4. 로고박스 */
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  height: auto;
+  margin-top: 0;
+}
+/* 로고이미지 */
+.logo img {
+  width: 100px;
+}
+/* 마지막 li 패딩제외 */
+.gnb li:last-child {
+  padding-right: 0;
+}
+
 /* GNB메뉴박스 */
 .gnb {
     position: relative;
@@ -9,8 +54,9 @@
   /* ul 초기화 */
   .gnb ul {
     display: flex;
-    width: 800px;
-    margin: 0 150px;
+    /* width: 800px; */
+    margin: 0 350px;
+    text-align: center;
     /* outline: 1px solid red; */
   }
   /* 상위li 리스트요소 */
@@ -75,7 +121,6 @@
     display: block;
     width: 100%;
     height: 100%;
-
     font-size: 16px;
     line-height: 40px;
     color: #000;
@@ -219,15 +264,11 @@
   .smenu dt a{
     font-size: 13px;
   }
-
-
+  
 
   /* 본문내용 */
   .cont {
     position: relative;
-    /* 하위 박스가 포지션이 있으면 나중에 그린박스가
-      윗박스보다 위에 올라온다! 따라서 메뉴박스가 위에 오도록
-      z-index를 상위박스에서 높여줘야 하위메뉴가 밑에 깔리지 않는다! */
     text-align: center;
     line-height: 50;
   }
