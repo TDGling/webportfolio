@@ -27,9 +27,6 @@ font-family: 'Noto Sans KR', sans-serif;
 */
 
 /* 공사중 표시 */
-/* body * {
-    outline: 1px dashed gray;
-} */
 
 /************* 2. 공통 class *************/
 
@@ -40,6 +37,16 @@ font-family: 'Noto Sans KR', sans-serif;
 }
 
 /* 2-2. 비율유지박스 */
+.ban {
+    position: relative;
+}
+.ban::before {
+    content: "";
+    display: block;
+}
+.ban.rt1::before{
+    padding-top: 50%;
+}
 .rbx {
     /* 부모자격필수!
   (비율유지속박스 앱솔루트의 부모) */
