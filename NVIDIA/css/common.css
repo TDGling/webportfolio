@@ -87,6 +87,7 @@
   /* 상위 li에 마우스 오버시 서브메뉴 배경 가상요소 보이기 */
   .gnb>ul>li:hover::after {
     height: 200px;
+    /* 200px */
   }
 
   /* li사이에 구분선 넣기 */
@@ -179,7 +180,7 @@
     /* li가상요소 앱솔루트 보다 위! */
     /* 크기유지박스 왼쪽 패딩적용 */
     /* width: 800px; */
-    width: 1000px;
+    width: 1425px;
     box-sizing: border-box;
     padding-left: 25px;
     /* outline: 1px dotted lime; */
@@ -208,7 +209,8 @@
 
   /* 상위메뉴 li 오버시 서브메뉴 보이기 */
   .gnb>ul>li:hover .smenu {
-    height: 200px;
+    height: auto;
+    /* 200px */
   }
 
   /* 서브메뉴 ol */
@@ -246,8 +248,9 @@
 
   /* 서브메뉴 하위 디자인 */
   .smenu dl{
-    width: 120px;
-    margin-left: -10px; /* /////// 수 정 */
+    width: 150px;
+    margin-left: 10px; /* /////// 수 정 */
+    text-align: center;
     /* margin-left: -100px; */
   }
   .smenu dt{
