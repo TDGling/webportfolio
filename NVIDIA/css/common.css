@@ -112,7 +112,7 @@
     height: 20px;
     margin-top: 10px;
     margin-left: 1px;
-    background-color: white;
+    background-color: black;
   }
 
   /* li 상위메뉴 a요소 */
@@ -239,10 +239,10 @@
   }
 
   /* 서브메뉴 dd하위 a에 오버시 */
-  .smenu dd a:hover {
-    /* background-color: lightskyblue; */
-    /* color: darkblue; */
-  }
+  /* .smenu dd a:hover {
+     background-color: lightskyblue;
+    color: darkblue;
+  } */
 
   /* 서브메뉴 하위 디자인 */
   .smenu dl{
@@ -251,7 +251,8 @@
     /* margin-left: -100px; */
   }
   .smenu dt{
-    border-bottom: 1px solid lightskyblue;
+    border-bottom: 1px solid black;
+    /* li 하단 밑줄 */
     margin-bottom: 5px;
   }
   .smenu dt a{

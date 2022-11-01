@@ -37,8 +37,6 @@ window.addEventListener("DOMContentLoaded", loadFn);
     기능: 로딩 후 버튼 이벤트 및 기능구현
 ******************************************/
 function loadFn() {
-    // 1. 호출확인
-    console.log("로딩완료!");
 
     // 광클금지 상태변수
     let prot = 0; // 0-허용, 1-불허용
