@@ -6,7 +6,7 @@
 /* Roboto체 + Roboto Condensed체 - CDN */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap");
 /* noto sans kr */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap");
 
 /* 
 font-family: 'Roboto', sans-serif;
@@ -27,7 +27,7 @@ font-family: 'Noto Sans KR', sans-serif;
 */
 
 /* 공사중 표시 */
-body *{
+body * {
     outline: dotted #000;
 }
 
@@ -47,7 +47,7 @@ body *{
     content: "";
     display: block;
 }
-.ban.rt1::before{
+.ban.rt1::before {
     padding-top: 50%;
 }
 .rbx {
@@ -90,8 +90,27 @@ body *{
   height값을 100% 안줘도
   자동으로 부모박스를 채운다! */
 }
-
-/* 2-5. 유형별 박스 */
-/* 1개 컨텐츠박스형 */
-/* .pt1 {
-                                                                                                                                                    height: 724px; -> 비율박스적용시 높이값 없음!
+.t1 {
+    margin-top: 230px;
+    margin-left: 50px;
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+.t2 {
+    /* margin-top: 50%; */
+    position: relative;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    left: 150px;
+    bottom: 150px;
+}
+.t3 {
+    position: relative;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    left: 300px;
+    bottom: 300px;
+}
