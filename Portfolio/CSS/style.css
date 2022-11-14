@@ -110,11 +110,14 @@ ul,ol{
 /* 상단영역 */
 
 /* 로고 */
-.nvdia{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 800;
-    font-size: 28px;
-    
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    height: auto;
+    margin-top: 0;
+    width: 100px;
 }
 
 .tbx ul li:nth-child(2){
