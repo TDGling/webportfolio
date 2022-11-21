@@ -96,7 +96,8 @@ ul,ol{
 
 .tbx ul{
     display: flex;
-    padding-top: 22px;
+    margin-top: 23px;
+    margin-right: 60px;
 }
 
 .tbx a{
@@ -108,37 +109,46 @@ ul,ol{
 }
 
 /* 상단영역 */
+.nv {
+    margin-top: 9px;
+    /* margin-left: 155px; */
+}
 
 /* 로고 */
 .logo{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 30px;
     padding: 10px;
     height: auto;
     margin-top: 0;
     width: 100px;
+    height: 100px;
 }
 
 .tbx ul li:nth-child(2){
-    padding-left: 10%;
+    padding-left: 0;
     position: relative;
 }
 
-/* DUDCO로고 옆 검색박스 */
+/* 로고 li */
+.logomg {
+    margin-left: 50%;
+}
+
+/* 로고 옆 검색박스 */
 .top input{
-    width: 462px;
-    height: 46px;
-    border-radius: 25px;
+    width: 500px;
+    height: 40px;
     background-color: #f1f1f5;
     border: none;
-    float: right;
+    float: right; 
 }
 
 /* 검색박스 폰트 포지션설정 */
 .top input[type=text]{
     padding-top: 3px;
-    padding-left:24px;
+    padding-left:12px;
     box-sizing: border-box;
 }
 
@@ -166,7 +176,7 @@ ul,ol{
 .sbx{
     display: flex;
     float: right;
-    padding-top: 26px;
+    padding-top: 28px;
 }
 
 /* 사람로고 사이간격설정 */
@@ -186,8 +196,8 @@ ul,ol{
 
 /* 상단 사이드박스 이미지 사이즈속성 */
 .top .sbx img{
-    width: 38px;
-    height: 38px;
+    width: 25px;
+    height: 25px;
 }
 
 
@@ -207,8 +217,8 @@ ul,ol{
 
 /* 서브탑 햄버거버튼 이미지 사이즈설정 */
 .stop .hbb img{
-    margin-top: 15px;
-    width: 20px;
+    margin-top: 16px;
+    width: 32px;
     height: 23px;
     
 }
@@ -432,7 +442,7 @@ ul,ol{
 }
 
 .cun {
-    background: rgba(0, 0, 0, 0.03);
+    /* background: rgba(0, 0, 0, 0.03); */
     width: 314px;
     height: 396px;
     display: block;
@@ -925,7 +935,30 @@ ul,ol{
     
 }
 
+#info{
+    background: black;
+}
+/* 바로가기 ol */
+.f1 ol{
+    padding: 30px 4vw 80px;
+}
 
+/* 바로가기 li*/
+.f1 li{
+    display: flex;
+    justify-content: center;
+    line-height: 2.2;
+}
+
+/* 바로가기 메뉴 */
+.f1 li>a{
+    color: white;
+    font-size: 12px;
+    /* 텍스트 왼쪽으로 정렬 */
+    margin-right: auto;
+    /* 줄바꿈방지 */
+    white-space: nowrap;
+}
 
 
 
@@ -1097,7 +1130,8 @@ ul,ol{
 
 /* 두번째탑 위쪽 구분선 설정 */
 .ttop{
-    border-bottom: 2px solid #dbdbdb;
+    /* border-bottom: 2px solid #dbdbdb; */
+    margin: -16px;
 }
 
 .top{
