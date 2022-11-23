@@ -3,12 +3,9 @@
 
 /* 공통 외부CSS 합치기 */
 @import url(banner.css);
-/* @import url(common.css); */
-/* @import url(core.css); */
-@import url(media.css);
-/* 제이쿼리 */
+@import url(common.css);
 @import url(reset.css);
-@import url(style.css);
+@import url(media.css);
 
 /* 개별 배경이미지 */
 /* 1. 1개 */
