@@ -603,7 +603,7 @@ ol {
 /* 온디먼트 */
 
 .nvi{
-    margin-left: 500px;
+    margin-left: 80px;
     /* display: block; */
 }
 .ontit{
@@ -613,7 +613,7 @@ ol {
 }
 .ond{
     margin: 200px;
-    margin-left: 800px;
+    margin-left: 700px;
     margin-top: -185px;
 }
 .tit{
@@ -624,6 +624,12 @@ ol {
 }
 .push{
     margin: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    background-color: lightgreen;
+
 }
 
 
@@ -638,6 +644,7 @@ ol {
 
 .cull2 {
     display: flex;
+    padding-left: 80px;
     padding-top: 32px;
 }
 
@@ -729,7 +736,7 @@ ol {
     width: 200px;
     height: 47px;
     margin: 69px auto;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     background: #fff;
     outline: 1px solid #dbdbdb;
 }
@@ -747,7 +754,7 @@ ol {
 
 .ifv {
     display: flex;
-    border-radius: 50px;
+    border-radius:  0px;
 }
 
 .ifv p {
@@ -845,7 +852,8 @@ ol {
 /* 두번째탑 위쪽 구분선 설정 */
 .ttop {
     /* border-bottom: 2px solid #dbdbdb; */
-    margin: -16px;
+    margin-top: -15px;
+    margin-bottom: -15px;
 }
 
 .top {
