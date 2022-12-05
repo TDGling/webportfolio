@@ -642,7 +642,7 @@ body{
 .cun {
     /* background: rgba(0, 0, 0, 0.03); */
     width: 314px;
-    height: 396px;
+    height: 220px;
     /* block */
     display: block;
     box-sizing: border-box;
@@ -658,7 +658,7 @@ body{
 .icun {
     background: #dbdbdb;
     width: 314px;
-    height: 314px;
+    height: 173x;
     display: block;
     box-sizing: border-box;
     position: absolute;
@@ -686,7 +686,7 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    padding-top: 16px;
+    padding-top: 160px;
     color: #191919;
 }
 
@@ -694,7 +694,7 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    padding-top: 2px;
+    padding-top: 10px;
     color: #505050;
 }
 
@@ -707,6 +707,51 @@ body{
 }
 
 .cull2 p:nth-child(4) span {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #191919;
+    padding-left: 2px;
+}
+
+.cull3 {
+    display: flex;
+    padding-left: 80px;
+    padding-top: 32px;
+}
+.cull3 li+li {
+    padding-left: 8px;
+}
+.cull3 p,
+.cull3 img {
+    transition: .2s;
+}
+
+.cull3 p:nth-child(2) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 16px;
+    color: #191919;
+}
+
+.cull3 p:nth-child(3) {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 10px;
+    color: #505050;
+}
+
+.cull3 p:nth-child(4) {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #191919;
+    padding-top: 12px;
+}
+
+.cull3 p:nth-child(4) span {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
     font-weight: 400;
