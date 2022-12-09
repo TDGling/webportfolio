@@ -27,6 +27,10 @@ ol {
 body{
     margin: 0 auto;
 }
+html,body{
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 .ibx {
     /* 플렉스박스 */
@@ -41,17 +45,9 @@ body{
     min-height: 88px;
 }
 
-.mbx {
-    /* 플렉스박스 */ 
-    display: flex;
-    /* 크기가 넘치면 아래로 내려감 */ 
-    flex-wrap: wrap;
-    max-width: 1580px;
-    margin: 0 auto;
-    /* outline: 1px dashed gray; */  
-    min-height: 90px;
+/* .mbx {
 
-}
+} */
 /* .rigbox{
     width: 1000px;
     height: 1000px;
@@ -178,7 +174,7 @@ body{
     display: flex;
     float: right;
     padding-top: 30px;
-    margin-right: -120px;
+    /* margin-right: -120px; */
 }
 
 /* 사람로고 사이간격설정 */
@@ -383,8 +379,8 @@ body{
     z-index: 1;
     /* li가상요소 앱솔루트 보다 위! */
     /* 크기유지박스 왼쪽 패딩적용 */
-    /* width: 800px; */
-    width: 1425px;
+    width: 100%;
+    /* max-width: 1280px; */
     box-sizing: border-box;
     padding-left: 25px;
     /* outline: 1px dotted lime; */
@@ -530,29 +526,15 @@ body{
     color: #707070;
 }
 
-#container {
-    /*최상위부모*/
-    /* position: relative; */
+/* #container {
     width: 1381px;
     margin: 0px auto;
-}
+} */
 
 #container>header {
     position: relative;
     width: 100%;
     height: 222px;
-}
-
-#container>section {
-    /*슬라이드부모*/
-    position: relative;
-    width: 1425px;
-    height: 800px;
-    float: left;
-    overflow: hidden;
-    /*넘치는 자식요소 숨기기*/
-    /*    border: 2px solid red;*/
-    box-sizing: border-box;
 }
 
 .cul2 span {
@@ -647,10 +629,9 @@ body{
 
 /* 온디먼트 */
 
-/* .nvi{
-    /* margin-left: 80px;
-    /* display: block; 
-} */
+.nvi{
+   display: flex;
+}
 
 .ontit{
     margin-top: 100px;
@@ -658,16 +639,15 @@ body{
     text-align: center;
     font-weight: 300;
 }
-.ond{
-    /* margin: 200px; */
-    margin-left: 700px;
-    margin-top: -185px;
-}
+/* .ond{
+    outline: 1px solid red;
+} */
 .tit{
     margin: 10px;
 }
 .sname{
     margin: 10px;
+    white-space: normal;
 }
 .push{
     margin: 10px;
@@ -683,8 +663,8 @@ body{
 
 .cun {
     /* background: rgba(0, 0, 0, 0.03); */
-    width: 314px;
-    height: 220px;
+    /* width: 314px; */
+    /* height: 220px; */
     /* block */
     display: block;
     box-sizing: border-box;
@@ -694,16 +674,21 @@ body{
     display: flex;
     /* padding-left: 80px; */
     padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.cull2 li{
+    flex: 1;
 }
 
 /* 이미지 박스 */
 .icun {
     background: #dbdbdb;
-    width: 314px;
-    height: 173x;
+    /* width: 314px;*/
+    /* height: 173px;  */
     display: block;
     box-sizing: border-box;
-    position: absolute;
+    /* position: absolute; */
     top: 41px;
 }
 
@@ -720,19 +705,31 @@ body{
 }
 
 .cull2 p,
-.cull2 img {
+.cullcm img {
+    width: 100%;
     transition: .2s;
 }
+.cull3{
+    display: flex;
+}
+.cull3 li{
+    flex: 1;
+}
+.cull3 p{
+    box-sizing: border-box;
+    padding: 10px;
+    white-space: normal;
+}
 
-.cull2 p:nth-child(2) {
+.cullcm p:nth-child(2) {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    padding-top: 160px;
+    padding-top: 10px;
     color: #191919;
 }
 
-.cull2 p:nth-child(3) {
+.cullcm p:nth-child(3) {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
     font-weight: 600;
@@ -740,7 +737,7 @@ body{
     color: #505050;
 }
 
-.cull2 p:nth-child(4) {
+.cullcm p:nth-child(4) {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -748,7 +745,7 @@ body{
     padding-top: 12px;
 }
 
-.cull2 p:nth-child(4) span {
+.cullcm p:nth-child(4) span {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
     font-weight: 400;
@@ -756,9 +753,9 @@ body{
     padding-left: 2px;
 }
 
-.cull3 {
+/* .cull3 {
     display: flex;
-    /* padding-left: 80px; */
+    padding-left: 80px;
     padding-top: 32px;
 }
 .cull3 li+li {
@@ -799,7 +796,7 @@ body{
     font-weight: 400;
     color: #191919;
     padding-left: 2px;
-}
+} */
 
 /* .cun{
     overflow: hidden;
@@ -1043,9 +1040,9 @@ body{
     height: 2480px;
 }
 
-.scont {
+/* .scont {
     height: 800px;
-}
+} */
 
 .col-1 {
     width: 48%;

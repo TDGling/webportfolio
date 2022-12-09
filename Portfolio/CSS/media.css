@@ -1,15 +1,5 @@
 @charset "utf-8";
 
 @media screen and (max-width:1426px){
-    #container>section {
-        /*슬라이드부모*/
-        position: relative;
-        width: 1425px;
-        height: 800px;
-        float: left;
-        overflow: hidden;
-        /*넘치는 자식요소 숨기기*/
-        /*    border: 2px solid red;*/
-        box-sizing: border-box;
-    }
+    
 }
