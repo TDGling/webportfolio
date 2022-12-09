@@ -637,6 +637,12 @@ body{
         margin: 0 auto;
         min-height: 88px;
 }
+.gango{
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 88px;
+}
 
 .h2 best {
     text-align: center;
@@ -647,15 +653,29 @@ body{
 
 /* 온디먼트 */
 
-/* .nvi{
-    /* margin-left: 80px;
-    /* display: block; 
-} */
+.nvi{
+     margin-left: 40px;
+     display: block; 
+}
+
+.nviun{
+    margin-top: 10px;
+}
+.unsmb{
+    background: #dbdbdb;
+    width: 314px;
+    height: 173x;
+    
+}
+
+.leftsh{
+    margin-left: 700px;
+    margin-top: -800px;
+}
 
 .ontit{
-    margin-top: 100px;
-    margin-bottom: 30px;
-    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 300;
 }
 .ond{
@@ -683,7 +703,7 @@ body{
 
 .cun {
     /* background: rgba(0, 0, 0, 0.03); */
-    width: 314px;
+    width: 263px;
     height: 220px;
     /* block */
     display: block;
@@ -699,8 +719,8 @@ body{
 /* 이미지 박스 */
 .icun {
     background: #dbdbdb;
-    width: 314px;
-    height: 173x;
+    width: 200px;
+    height: 173px;
     display: block;
     box-sizing: border-box;
     position: absolute;
@@ -728,7 +748,7 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    padding-top: 160px;
+    padding-top: 60px;
     color: #191919;
 }
 

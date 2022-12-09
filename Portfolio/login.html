@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NVDIA | Graphic driver</title>
+    <title>NVDIA | Graphic driver login</title>
     <link rel="stylesheet" href="./CSS/main.css">
-    <script src="./JS/banner.js"></script>
+    <link rel="stylesheet" href="./CSS/login.css">
 </head>
 <body>
-    <!-- 상단 영역 -->
-    <div class="ttop">
+     <!-- 상단 영역 -->
+     <div class="ttop">
         <header class="ibx top">
             <div class="tbx col-1">
                 <ul>
@@ -735,385 +735,81 @@
             </ul>
         </nav>
     </div>
-    <!-- 메인 영역 -->
-    <div>
-        <main class="mbx scont por">
-            <div class="rigbox"></div>
-            <div id="cont" class="bgc">
-                <section id="container">
-                    <section>
-                        <!--슬라이드-->
-                        <ul id="slide">
-                            <li><img src="./img/banner1 copy.jpg" alt="slide"></li>
-                            <li><img src="./img/banner2 copy.jpg" alt="slide"></li>
-                            <li><img src="./img/banner4 copy.jpg" alt="slide"></li>
-                            <!-- <li><img src="./images/slide04.jpg" alt="slide"></li> -->
-                            <!-- <li><img src="./images/slide05.jpg" alt="slide"></li> -->
-                        </ul>
-                        <!--이동버튼-->
-                        <a href="#" class="abtn ab1">
-                            <img src="img/왼쪽 화살표.png" alt="왼쪽이동버튼" width="50px"/>
-                        </a>
-                        <a href="#" class="abtn ab2">
-                            <img src="img/오른쪽 화살표.png" alt="오른쪽이동버튼" width="50px"/>
-                        </a>
 
-                        <!--블릿버튼-->
-                        <ol class="indic">
-                            <li class="on">
-                                <img src="./images/dot1.png" alt="흰색" />
-                                <img src="./images/dot2.png" alt="회색" />
-                            </li>
-                            <li>
-                                <img src="./images/dot1.png" alt="흰색" />
-                                <img src="./images/dot2.png" alt="회색" />
-                            </li>
-                            <li>
-                                <img src="./images/dot1.png" alt="흰색" />
-                                <img src="./images/dot2.png" alt="회색" />
-                            </li>
-                            <!-- <li>
-                                <img src="images/dot1.png" alt="흰색" />
-                                <img src="images/dot2.png" alt="회색" />
-                            </li>
-                            <li>
-                                <img src="images/dot1.png" alt="흰색" />
-                                <img src="images/dot2.png" alt="회색" />
-                            </li> -->
-                        </ol>
-                    </section>
-                </section>
+    <main>
+        <div id="loginBox">
+            <div class="login">
+                NVDIA 로그인
             </div>
-        </main>
-    </div>
-        <main class="">
-                <!-- NVDIA on-dimant -->
-                <div class="di2">
-                    <h2 class="ontit">NVDIA 온디먼트</h2>
-                    <div class="nvi">
-                        <img class="nvi1" src="img/NVIDIADemand1.png" alt="nvimg">
-                        <img class="nvi2" src="img/NVIDIADemand2.png" alt="nvimg">
-                        <img class="nvi3" src="img/NVIDIADemand3.png" alt="nvimg">
-                        <div class ="ond">
-                            <h3 class ="tit">GTC의 영감 가득한 온디맨드 세션 확인하기</h3>
-                            <p class ="sname">수백개의 최신 GTC의 세션을 통해 전문 지식을 쌓고 당신의 다음 돌파구를 발견할 수 있습니다.<br>
-                                키노트을 시청하고 기술 세션에서 배움을 심화하며 AI로 무엇을 할 수 있는지 확인해보세요.<br>
-                                모든 세션을 자유롭게 이용하실 수 있습니다.</p>
-                            <button class="push">온디먼트 시청하기</button>
+            <div class="logBox">
+                <div class="log">
+                    <div class="warpBox">
+                        <div class="idBox">
+                            <input id="idtxt" name="idtxt" type="text" maxlength="20" placeholder="아이디를 입력해 주세요."
+                                required="required">
+                        </div>
+                        <div class="pwBox">
+                            <input id="pwtxt" name="pwtxt" type="password" maxlength="20" placeholder="비밀번호를 입력해 주세요."
+                                required="required" autocomplete="off">
+                        </div>
+
+                        <div class="chk">
+                            <span>
+                                <input type="checkbox" id="chkbx" name="chkbx" />
+                                <label for="chkbx">아이디저장</label>
+                            </span>
+                        </div>
+
+                        <button class="logbtn">
+                            <a href="">로그인</a>
+                        </button>
+                        <div class="login_btn_wrap">
+                            <ul>
+                                <li>
+                                    <a class="memgo" href="./member.html">회원가입</a>
+                                </li>
+                                <li>
+                                    <a class="idsh" href="#">아이디찾기</a>
+                                </li>
+                                <li class="last">
+                                    <a class="pwsh" href="#">비밀번호찾기</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="di2">
-                    <h2>온라인 샵</h2>
-                    <ul class="cull2">
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/shop1.jpg" alt="상품" width="314px">
-                                </span>
-                            </span>
-                            <p>RTX 4090</p>
-                            <p></p>
-                            <p class="lp">2,835,230<span class="ls">원</span></p>
-                        </li>
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/shop2.png" alt="상품" width="314px"></span>
-                                </span>
-                            <p>RTX 4080</p>
-                            <p></p>
-                            <p class="lp">1,999,000<span class="ls">원</span></p>
-                        </li>
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/shop3.jpg" alt="상품" width="314px">
-                                </span>
-                            </span>
-                            <p>RTX 3090 Ti / 3090</p>
-                            <p></p>
-                            <p class="lp">2,841,040 ~ 2,349,740<span class="ls">원</span></p>
-                        </li>
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/shop4.jpg" alt="상품" width="314px">
-                                </span>
-                            </span>
-                            <p>RTX 3080 Ti / 3080</p>
-                            <p></p>
-                            <p class="lp">1,699,000 ~ 1,084,990<span class="ls">원</span></p>
-                        </li>
-                    </ul>
-                    <ul class="cull2">
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/shop5.jpg" alt="상품" width="314px">
-                                </span>
-                            </span>
-                            <p>RTX 3070 Ti / 3070</p>
-                            <p></p>
-                            <p class="lp">1,032,000 ~ 818,990<span class="ls">원</span></p>
-                        </li>
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/shop6.png" alt="상품" width="314px"></span>
-                                </span>
-                            <p>RTX 3060 Ti / 3060</p>
-                            <p></p>
-                            <p class="lp">557,900 ~ 440,460<span class="ls">원</span></p>
-                        </li>
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/shop7.jpg" alt="상품" width="314px">
-                                </span>
-                            </span>
-                            <p>RTX 3050</p>
-                            <p></p>
-                            <p class="lp">402,000<span class="ls">원</span></p>
-                        </li>
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/shop8.png" alt="상품" width="314px">
-                                </span>
-                            </span>
-                            <p>RTX 2080 Ti / 2080</p>
-                            <p></p>
-                            <p class="lp">143,050<span class="ls">원</span></p>
-                        </li>
-                    </ul>
-                    <div class="ffv">
-                        <a href="#">
-                            <span class="fv">
-                                <div class="ifv">
-                                    <p>전체보기</p><img src="./img/오른쪽 화살표.png" alt="오른쪽 화살표">
-                                </div>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="di2">
-                    <h2>최신뉴스</h2>
-                    <ul class="cull3">
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/News1.png" alt="뉴스" width="314px" height="173px">
-                                </span>
-                            </span>
-                            <p>Omniverse, Fast Company의 <br> "기술 분야의 차세대 주요 기업" 중 하나로 선정</p>
-                            <p>Omniverse는 혁신의 우수성과 메타버스의 발전 <br> 으로Fast Company의 테크 2022의 다음 <br> 빅 씽스에 선정되었다.</p>
-                        </li>
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/News2.png" alt="뉴스" width="314px" height="173px"></span>
-                                </span>
-                            <p>Azure의 NVIDIA 가속 AI</p>
-                            <p><br>Azure의 NVIDIA가 어떻게 AI, 네트워킹 및 고성능 <br>  컴퓨팅을 기업에 제공하는지 알아보세요.</p>
-                        </li>
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/News3.png" alt="뉴스" width="314px" height="173px">
-                                </span>
-                            </span>
-                            <p>NVIDIA 드라이브 Orin을 기반으로 <br> 제작된 새로운 Volvo EX90</p>
-                            <p>Volvo자동차가 인공지능 구동 전기 SUV로 안전을 <br> 위한 새로운 시대를 예고합니다.</p>
-                        </li>
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/News4.png" alt="뉴스" width="314px" height="173px">
-                                </span>
-                            </span>
-                            <p>NVIDIA AI, 산업 연구 강화</p>
-                            <p><br>NVIDIA는 Revcale과 협력하여 모든 주요 클라우드 <br> 서비스 공급자에게
-                                NVIDIA AI 소프트웨어의 <br> 전체 스택을 제공합니다.</p>
-                        </li>
-                    </ul>
-                    <ul class="cull3">
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/News5.png" alt="뉴스" width="314px" height="173px">
-                                </span>
-                            </span>
-                            <p>Omniverse의 새로운 베타 릴리즈 제공</p>
-                            <p><br>Omniverse의 새 릴리스는 그 어느 때보다 빠르고 <br> 유연하게 플랫폼을 만드는 키트, 코드, 생성, <br> Machinima 
-                                등을 포함한 핵심 애플리케이션에 <br> 대한 주요 업데이트를 제공합니다.</p>
-                        </li>
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/News6.png" alt="뉴스" width="314px" height="173px"></span>
-                                </span>
-                            <p>HEAVY.AI, 통신사 네트워크 계획 및 운영을 위한 <br> 디지털 트윈 제공</p>
-                            <p>HEAVY.AI 는 NVIDIA Omnivers™를 사용하여 <br> 통신 회사가 무선 사이트 배치를 최적화함으로써<br>
-                                운영의 복잡성을 줄이고 있습니다.</p>
-                        </li>
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/News7.png" alt="뉴스" width="314px" height="173px">
-                                </span>
-                            </span>
-                            <p>딜로이트, NVIDIA AI 및 Omniverse 플랫폼으로 <br> 혁신적인 솔루션 확장</p>
-                            <p>엣지 AI, 음성 AI, 추천 시스템, 챗봇, 사이버 보안, <br> 메타버스 애플리케이션,
-                                디지털 트윈 등을 포함한 <br> 엔터프라이즈를 위한 최첨단 애플리케이션을 <br>지원합니다.</p>
-                        </li>
-                        <li>
-                            <span class="cun por">
-                                <span class="icun">
-                                    <img src="./img/News8.png" alt="뉴스" width="314px" height="173px">
-                                </span>
-                            </span>
-                            <p>NVIDIA Omniverse ACE 가 인터랙티브 아바타를 <br> 더 빠르고 쉽게 배포할 수 있도록 지원하는 방법을 <br> 알아보세요</p>
-                            <p>NVIDIA Tokkio 애플리케이션 프레임워크를 사용해 <br> 탄생한 인터랙티브 AI 기반 아바타, Violet을 만나보세요.<br>
-                                이 클라우드 기반 어시스턴트는 NVIDIA Omniverse <br> Avatar Cloud Engine(ACE)를 활용해 사용자를 <br> 확인하고
-                                대화하여 지능형 추천 서비스를 제공합니다.</p>
-                        </li>
-                    </ul>
-                    <div class="ffv">
-                        <a href="#">
-                            <span class="fv">
-                                <div class="ifv">
-                                    <p>전체보기</p><img src="./img/오른쪽 화살표.png" alt="오른쪽 화살표">
-                                </div>
-                            </span>
-                        </a>
-                    </div>
-                </div>
-
             </div>
-        </main>
-
-        <!-- 하단 -->
-        <div id="fast">
-            <ul class="f1">
-                <li>
-                    <ol>
-                        <li class="st">
-                            <a href="#">기업 정보</a>
-                        </li>
-                        <li>
-                            <a href="#">정보</a>
-                        </li>
-                        <li>
-                            <a href="#">기업 개요</a>
-                        </li>
-                        <li>
-                            <a href="#">기술</a>
-                        </li>
-                        <li>
-                            <a href="#">연구</a>
-                        </li>
-                        <li>
-                            <a href="#">투자 정보</a>
-                        </li>
-                        <li>
-                            <a href="#">사회적 책임</a>
-                        </li>
-                        <li>
-                            <a href="#">NVIDIA Foundation</a>
-                        </li>
-                    </ol>
-                    <ol>
-                        <li class="st">
-                            <a href="#">참여 프로그램</a>
-                        </li>
-                        <li>
-                            <a href="#">포럼</a>
-                        </li>
-                        <li>
-                            <a href="#">채용 정보</a>
-                        </li>
-                        <li>
-                            <a href="#">개발자 홈</a>
-                        </li>
-                        <li>
-                            <a href="#">개발자 프로그램 가입하기</a>
-                        </li>
-                        <li>
-                            <a href="#">NVIDIA 파트너 네트워크</a>
-                        </li>
-                        <li>
-                            <a href="#">스타트업 및 VC</a>
-                        </li>
-                        <li>
-                            <a href="#">기술 교육</a>
-                        </li>
-                        <li>
-                            <a href="#">데이터 사이언티스트를 위한 전문 서비스</a>
-                        </li>
-                    </ol>
-                    <ol>
-                        <li class="st">
-                            <a href="#">뉴스 & 이벤트</a>
-                        </li>
-                        <li>
-                            <a href="#">뉴스룸</a>
-                        </li>
-                        <li>
-                            <a href="#">NVIDIA 블로그</a>
-                        </li>
-                        <li>
-                            <a href="#">NVIDIA 개발자 블로그</a>
-                        </li>
-                        <li>
-                            <a href="#">웨비나</a>
-                        </li>
-                        <li>
-                            <a href="#">뉴스레터 구독 설정</a>
-                        </li>
-                        <li>
-                            <a href="#">이벤트 캘린더</a>
-                        </li>
-                        <li>
-                            <a href="#">NVIDIA GTC</a>
-                        </li>
-                        <li>
-                            <a href="#">NVIDIA On-Demand</a>
-                        </li>
-                    </ol> 
-                </li>      
-            </ul>
         </div>
-          
-        <footer class="info ibx">
-            <!-- 하단로고 -->
-            <div class="blogo">
-                <img src="./img/nvidiaLogo.png" alt="하단로고" width="120px" height="20px"/>
-            </div>
-            <!-- 하단링크 -->
-            <ul class="blink">
-                <li>
-                    <a href="#">Privacy Policy</a>
-                </li>
-                <li>
-                    <a href="#">Legal Info</a>
-                </li>
-                <li>
-                    <a href="#">Accessibility</a>
-                </li>
-                <li>
-                    <a href="#">제품 보안</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-            <!-- 회사주소 -->
-            <address class="addr">
-                Copyright © 2022 NVIDIA Corporation
-            </address>
-        </footer>
+    </main>
+    
+
+    <footer class="info ibx">
+        <!-- 하단로고 -->
+        <div class="blogo">
+            <img src="./img/nvidiaLogo.png" alt="하단로고" width="120px" height="20px"/>
+        </div>
+        <!-- 하단링크 -->
+        <ul class="blink">
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="#">Legal Info</a>
+            </li>
+            <li>
+                <a href="#">Accessibility</a>
+            </li>
+            <li>
+                <a href="#">제품 보안</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <!-- 회사주소 -->
+        <address class="addr">
+            Copyright © 2022 NVIDIA Corporation
+        </address>
+    </footer>
 </body>
 </html>
