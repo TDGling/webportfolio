@@ -178,7 +178,7 @@ body{
     display: flex;
     float: right;
     padding-top: 30px;
-    margin-right: -135px;
+    margin-right: -120px;
 }
 
 /* 사람로고 사이간격설정 */
@@ -546,7 +546,7 @@ body{
 #container>section {
     /*슬라이드부모*/
     position: relative;
-    width: 1581px;
+    width: 1425px;
     height: 800px;
     float: left;
     overflow: hidden;
@@ -1019,6 +1019,10 @@ body{
     /* border-bottom: 2px solid #dbdbdb; */
     margin-top: -15px;
     margin-bottom: -15px;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    min-height: 88px;
 }
 
 .top {
@@ -1044,7 +1048,7 @@ body{
 }
 
 .col-1 {
-    width: 50%;
+    width: 48%;
 }
 
 
