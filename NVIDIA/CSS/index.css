@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/* 웹폰트 */
+/* Roboto체 + Roboto Condensed체 - CDN */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@300&display=swap");
+/* noto sans kr */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Noto+Sans:wght@300;400;500;700&family=Roboto:wght@300;500;700&display=swap');
+/* 
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+font-family: 'Noto Sans KR', sans-serif;
+*/
+
+/* 외곽선 */
+/* body *{
+    outline: 1px solid black;
+} */
+
+/* 기본 */
+ul,
+ol {
+    list-style: none;
+}
+body{
+    margin: 0 auto;
+}
+
+
+/* 상단영역 */
+.ttop {
+    /* border-bottom: 2px solid #dbdbdb; */
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.ibx {
+    /* 플렉스박스 */
+    display: flex;
+    /* 크기가 넘치면 아래로 내려감 */
+    flex-wrap: wrap;
+
+    max-width: 1280px;
+    margin: 0 auto;
+    /* outline: 1px dashed gray; */
+    /* 임시높이 */
+    min-height: 88px;
+}
+.ibx>span {
+    width: 1280px;
+    height: 276px;
+    background: rgba(0, 0, 0, 0.238);
+}
+
+.top {
+    height: 88px;
+}
+
+/*  */
+.stop {
+    height: 55px;
+}
+
+/* 로고 */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    padding: 10px;
+    height: auto;
+    margin-top: 0;
+    width: 100px;
+    height: 100px;
+}
+/* 로고 li */
+.logomg {
+    margin-left: 50%;
+}
+
+/* 로고 옆 검색박스 */
+.top input {
+    width: 500px;
+    height: 40px;
+    background-color: #f1f1f5;
+    border: none;
+    float: right;
+}
+
+/* 검색박스 폰트 포지션설정 */
+.top input[type=text] {
+    padding-top: 3px;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+
+/* 검색박스 폰트 속성설정 */
+.top input::placeholder {
+    color: #aeaeae;
+    font-size: 16px;
+}
+
+.por {
+    position: relative;
+}
+
+.sss {
+    outline: 2px solid #dbdbdb;
+}
+
+/* _________________________________________________________ */
+
+.tbx {
+    height: 88px;
+}
+.tbx ul {
+    display: flex;
+    margin-top: 23px;
+    margin-right: 60px;
+}
+.tbx a {
+    line-height: 45px;
+}
+.tbx ul li:nth-child(2) {
+    padding-left: 0;
+    position: relative;
+}
+.col-1 {
+    width: 50%;
+}

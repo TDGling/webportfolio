@@ -29,12 +29,11 @@ ol {
 /**************************************/
 
 
-#container {
-    /*최상위부모*/
+/* #container {
     position: relative;
     width: 1381px;
     margin: 0px auto;
-}
+} */
 
 #container>header {
     position: relative;
@@ -45,13 +44,19 @@ ol {
 #container>section {
     /*슬라이드부모*/
     position: relative;
-    width: 913px;
-    height: 564px;
-    float: left;
+    max-width: 1280px;
+    /* height: 564px; */
     overflow: hidden;
     /*넘치는 자식요소 숨기기*/
     /*    border: 2px solid red;*/
     box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#container>section::before {
+    content: '';
+    display: block;
+    padding-top: 50%;
 }
 
 #slide {
@@ -67,6 +72,8 @@ ol {
 }
 
 #slide li {
+    width: 100%;
+    height: 100%;
     flex-shrink: 0;
     /* 부모박스크기만큼 줄어들지 않음 -> 0 */
     flex-basis: 100%;
@@ -79,17 +86,19 @@ ol {
     /*이미지는 박스에 맞춤!*/
     width: 100%;
     height: 100%;
-    /* object-fit: cover; */
-    
+    object-fit: cover;
+
     /* 이미지 비율유지 채우기! 기본값 cover*/
 }
 
 /*이동버튼*/
 .abtn {
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    bottom: 0px;
     transform: translateY(-50%);
     /*Y축 중앙이동*/
+    color:#fff;
 }
 
 /*왼쪽버튼*/
@@ -99,7 +108,7 @@ ol {
 
 /*오른쪽버튼*/
 .ab2 {
-    right: 50px;
+   left: 160px;
 }
 
 /*블릿버튼*/
@@ -107,8 +116,9 @@ ol {
     display: flex;
     /* 플렉스박스 */
     position: absolute;
-    bottom: 20px;
-    left: 50%;
+    bottom: 42px;
+    left: 100px;
+    opacity: 70%;
 }
 
 .indic li {
